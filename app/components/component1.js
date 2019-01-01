@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 
-type Props = {};
-class Component1 extends Component<Props> {
+class Component1 extends Component {
   render() {
     return (
       <View>

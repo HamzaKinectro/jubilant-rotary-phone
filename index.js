@@ -2,15 +2,21 @@
 
 // import {AppRegistry} from 'react-native';
 // import App from './App';
-import { name as appName } from "./app.json";
 
 // AppRegistry.registerComponent(appName, () => App);
 
 import React from "react";
-import { Text, AppRegistry } from "react-native";
-
+import { Text, AppRegistry, View } from "react-native";
+import { name as appName } from "./app.json";
+import Header from "./app/src/components/header";
+import AlbumList from "./app/src/components/Albumlist";
 const App = () => {
-  return <Text>My First App</Text>;
+  return (
+    <View>
+      <Header headerText="Albums!" />
+      <AlbumList />
+    </View>
+  );
 };
 
 AppRegistry.registerComponent(appName, () => App);

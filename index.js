@@ -12,7 +12,7 @@ import Header from "./app/src/components/header";
 import AlbumList from "./app/src/components/Albumlist";
 const App = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Header headerText="Albums!" />
       <AlbumList />
     </View>
